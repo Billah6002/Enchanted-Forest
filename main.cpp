@@ -63,7 +63,7 @@ void creatStory(){
 
     StoryNode *yourReturn = setStory(" ", 
    " ",
-   "You rush out of the mansion, heart pounding.");
+   "You rush out of the forest, heart pounding.");
 
 
    //level-4
@@ -73,7 +73,7 @@ void creatStory(){
 
     StoryNode *RunAway = setStory(" ", 
    " ",
-   "You back away slowly, leaving the grove.");
+   "You back away slowly, leaving the grove and forest");
 
 
    StoryNode *shrine = setStory(" ", 
@@ -101,7 +101,7 @@ void creatStory(){
 
    StoryNode *heart = setStory(" ", 
    " ",
-   "You rush out of the mansion, heart pounding.");
+   "You rush out of the mansion, heart pounding.\nYoubecame scared and leave the forest");
 
     //connection
    
@@ -132,6 +132,7 @@ void playStory(){
     StoryNode *temp = startNode;
     while(temp != NULL){
         int chose;
+        system("sleep 1s");
         system("clear");
         cout << "\n";
         cout << temp->outcome << "\n";
@@ -158,7 +159,7 @@ void playStory(){
 
 int main() {
     system("clear");
-    cout << "WELCOME TO ENCHANTED FOREST\n";
+    cout << "\n\nWELCOME TO ENCHANTED FOREST\n";
     system("sleep 2s");
     creatStory();
     
